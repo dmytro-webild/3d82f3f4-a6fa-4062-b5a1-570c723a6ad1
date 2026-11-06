@@ -2,10 +2,11 @@ import FooterSimpleMedia from '@/components/sections/footer/FooterSimpleMedia';
 import NavbarFloatingLogo from '@/components/ui/NavbarFloatingLogo';
 import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
 import SiteBackgroundSlot from "@/components/ui/SiteBackgroundSlot";
+import PoolCage3DCanvas from "@/components/ui/PoolCage3DCanvas";
 import { Outlet } from 'react-router-dom';
 import { StyleProvider } from "@/components/ui/StyleProvider";
 
-const poolCageLogoSvg = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none"><rect width="100" height="100" rx="24" fill="%23041c24"/><path d="M15 75 Q 50 15 85 75" stroke="%2300b4d8" stroke-width="6" fill="none"/><line x1="20" y1="75" x2="80" y2="75" stroke="%2300d4bd" stroke-width="4"/><line x1="50" y1="28" x2="50" y2="75" stroke="%2300d4bd" stroke-width="3"/><path d="M25 65 Q 50 25 75 65" stroke="%2300f5d4" stroke-width="2" stroke-dasharray="3,3" fill="none"/><circle cx="50" cy="38" r="7" fill="%23f77f00"/></svg>`;
+const poolCageLogoSvg = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%23f7eaaf"/><stop offset="50%" stop-color="%23d4af37"/><stop offset="100%" stop-color="%238a6308"/></linearGradient><linearGradient id="c" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%2300f5d4"/><stop offset="50%" stop-color="%2300b4d8"/><stop offset="100%" stop-color="%230077b6"/></linearGradient><linearGradient id="b" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%230a2632"/><stop offset="100%" stop-color="%23031219"/></linearGradient></defs><rect width="100" height="100" rx="24" fill="url(%23b)" stroke="url(%23g)" stroke-width="2.5"/><path d="M 18 78 L 18 48 L 38 28 L 62 28 L 82 48 L 82 78" stroke="url(%23c)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><line x1="18" y1="78" x2="82" y2="78" stroke="url(%23c)" stroke-width="3"/><line x1="18" y1="48" x2="82" y2="48" stroke="url(%23c)" stroke-width="2" stroke-dasharray="3,3"/><line x1="50" y1="28" x2="50" y2="78" stroke="url(%23c)" stroke-width="1.8"/><path d="M 50 72 C 50 48, 30 38, 20 42 C 34 38, 46 44, 50 72 Z" fill="url(%23g)"/><path d="M 50 72 C 50 48, 70 38, 80 42 C 66 38, 54 44, 50 72 Z" fill="url(%23g)"/><path d="M 50 72 C 50 38, 40 22, 30 18 C 42 22, 48 34, 50 72 Z" fill="url(%23g)"/><path d="M 50 72 C 50 38, 60 22, 70 18 C 58 22, 52 34, 50 72 Z" fill="url(%23g)"/><polygon points="50,14 53,20 50,26 47,20" fill="url(%23g)"/></svg>`;
 
 export default function Layout() {
   const navItems = [
@@ -20,6 +21,7 @@ export default function Layout() {
 
   return (
     <StyleProvider buttonVariant="expand" siteBackground="floatingGradient" heroBackground="cornerGlow">
+      <PoolCage3DCanvas />
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
         <NavbarFloatingLogo
