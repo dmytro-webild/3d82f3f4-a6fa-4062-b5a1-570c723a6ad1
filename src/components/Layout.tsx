@@ -64,7 +64,7 @@ export default function Layout() {
             { label: "Terms of Service", href: "#" },
             { label: "Privacy Policy", href: "#" },
           ]}
-          imageSrc="http://img.b2bpic.net/free-photo/beautiful-luxury-swimming-pool-with-palm-tree_1339-4855.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/beautiful-luxury-swimming-pool-with-palm-tree_1339-4855.jpg?_wi=1"
         />
       </SectionErrorBoundary>
     </StyleProvider>
