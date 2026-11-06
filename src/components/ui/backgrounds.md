@@ -1,0 +1,14 @@
+# Background Components
+
+AuroraBackground
+ColumnWaveBackground
+CornerGlowBackground
+FloatingGradientBackground
+GradientBarsBackground
+GridLinesBackground
+HorizonGlowBackground
+LightRaysCenterBackground
+LightRaysCornerBackground
+NoiseBackground
+NoiseGradientBackground
+RadialGradientBackground

@@ -1,0 +1,2909 @@
+{
+  "sectionRegistry": {
+    "hero": [
+      {
+        "name": "HeroBillboard",
+        "import": "import HeroBillboard from '@/components/sections/hero/HeroBillboard';",
+        "path": "@/components/sections/hero/HeroBillboard",
+        "description": "Full-width centered hero with media below text content",
+        "propsSchema": {
+          "tag?": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "avatarsSrc?": "string[]",
+          "avatarsLabel?": "string",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroBillboardFeatures",
+        "import": "import HeroBillboardFeatures from '@/components/sections/hero/HeroBillboardFeatures';",
+        "path": "@/components/sections/hero/HeroBillboardFeatures",
+        "description": "Full-width hero with ActiveBadge and rotating feature cards overlay on media",
+        "propsSchema": {
+          "badge": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "features": "{ icon: string | LucideIcon; title: string; description: string }[]",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroBillboardCreator",
+        "import": "import HeroBillboardCreator from '@/components/sections/hero/HeroBillboardCreator';",
+        "path": "@/components/sections/hero/HeroBillboardCreator",
+        "description": "Full-width hero with creator video marquee and badge",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "titleHighlight?": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "note": "string",
+          "videos": "{ videoSrc: string; name: string; followers: string; imageSrc: string }[]",
+          "badgeText": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroBillboardFloatingCards",
+        "import": "import HeroBillboardFloatingCards from '@/components/sections/hero/HeroBillboardFloatingCards';",
+        "path": "@/components/sections/hero/HeroBillboardFloatingCards",
+        "description": "Full-width hero with floating image cards and logo marquee",
+        "propsSchema": {
+          "avatarsSrc": "string[]",
+          "avatarsLabel": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "note?": "string",
+          "floatingCardsSrc": "[string, string, string, string]",
+          "logosSrc?": "string[]",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroTiltedCards",
+        "import": "import HeroTiltedCards from '@/components/sections/hero/HeroTiltedCards';",
+        "path": "@/components/sections/hero/HeroTiltedCards",
+        "description": "Full-width centered hero with tilted card gallery",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "items": "[{ imageSrc: string } | { videoSrc: string }, { imageSrc: string } | { videoSrc: string }, { imageSrc: string } | { videoSrc: string }, { imageSrc: string } | { videoSrc: string }, { imageSrc: string } | { videoSrc: string }]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroBillboardScroll",
+        "import": "import HeroBillboardScroll from '@/components/sections/hero/HeroBillboardScroll';",
+        "path": "@/components/sections/hero/HeroBillboardScroll",
+        "description": "Centered hero with media that tilts and scales on scroll",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroSplit",
+        "import": "import HeroSplit from '@/components/sections/hero/HeroSplit';",
+        "path": "@/components/sections/hero/HeroSplit",
+        "description": "Split layout hero with text on left, media on right",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroOverlay",
+        "import": "import HeroOverlay from '@/components/sections/hero/HeroOverlay';",
+        "path": "@/components/sections/hero/HeroOverlay",
+        "description": "Full-screen hero with background media and text overlay",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "avatarsSrc?": "string[]",
+          "avatarsLabel?": "string",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroOverlayMarquee",
+        "import": "import HeroOverlayMarquee from '@/components/sections/hero/HeroOverlayMarquee';",
+        "path": "@/components/sections/hero/HeroOverlayMarquee",
+        "description": "Full-screen hero with background media, text overlay, avatar group, and icon marquee",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "avatarsSrc?": "string[]",
+          "avatarsLabel?": "string",
+          "items": "{ text: string; icon: LucideIcon }[]",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroOverlayTestimonial",
+        "import": "import HeroOverlayTestimonial from '@/components/sections/hero/HeroOverlayTestimonial';",
+        "path": "@/components/sections/hero/HeroOverlayTestimonial",
+        "description": "Full-screen hero with background media, text overlay, and rotating testimonial cards",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "testimonials": "({ name: string; handle: string; text: string; rating: number } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroOverlayParallax",
+        "import": "import HeroOverlayParallax from '@/components/sections/hero/HeroOverlayParallax';",
+        "path": "@/components/sections/hero/HeroOverlayParallax",
+        "description": "Full-screen hero with parallax background, avatar group, and centered content",
+        "propsSchema": {
+          "avatarsSrc": "string[]",
+          "avatarsLabel": "string",
+          "title": "string",
+          "titleHighlight?": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "imageSrc?": "string",
+          "videoSrc?": "string"
+        }
+      },
+      {
+        "name": "HeroOverlayStatistics",
+        "import": "import HeroOverlayStatistics from '@/components/sections/hero/HeroOverlayStatistics';",
+        "path": "@/components/sections/hero/HeroOverlayStatistics",
+        "description": "Full-screen hero with background media, text overlay, avatar group, and statistics card",
+        "propsSchema": {
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "avatarsSrc?": "string[]",
+          "avatarsLabel?": "string",
+          "statistics?": "{ title: string; subtitle: string }[]",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroBrand",
+        "import": "import HeroBrand from '@/components/sections/hero/HeroBrand';",
+        "path": "@/components/sections/hero/HeroBrand",
+        "description": "Full-screen hero with large full-width brand text, description, and background media",
+        "propsSchema": {
+          "brand": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroBillboardTiltedCarousel",
+        "import": "import HeroBillboardTiltedCarousel from '@/components/sections/hero/HeroBillboardTiltedCarousel';",
+        "path": "@/components/sections/hero/HeroBillboardTiltedCarousel",
+        "description": "Centered hero with tilted carousel showing multiple media items with rotation effect",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "items": "({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroBillboardCarousel",
+        "import": "import HeroBillboardCarousel from '@/components/sections/hero/HeroBillboardCarousel';",
+        "path": "@/components/sections/hero/HeroBillboardCarousel",
+        "description": "Centered hero with auto-scrolling horizontal marquee of media items",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "items": "({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroSplitKpi",
+        "import": "import HeroSplitKpi from '@/components/sections/hero/HeroSplitKpi';",
+        "path": "@/components/sections/hero/HeroSplitKpi",
+        "description": "Split hero with floating KPI cards that follow mouse movement",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "kpis": "[{ value: string; label: string }, { value: string; label: string }, { value: string; label: string }]",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroBillboardBrand",
+        "import": "import HeroBillboardBrand from '@/components/sections/hero/HeroBillboardBrand';",
+        "path": "@/components/sections/hero/HeroBillboardBrand",
+        "description": "Billboard hero with full-width brand text, right-aligned content, and media below",
+        "propsSchema": {
+          "brand": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroBillboardBrandFloatingCards",
+        "import": "import HeroBillboardBrandFloatingCards from '@/components/sections/hero/HeroBillboardBrandFloatingCards';",
+        "path": "@/components/sections/hero/HeroBillboardBrandFloatingCards",
+        "description": "Billboard hero with full-width brand text, right-aligned content, floating parallax cards, and media below",
+        "propsSchema": {
+          "brand": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "floatingCards": "[{ name: string; imageSrc?: string; videoSrc?: string }, { name: string; imageSrc?: string; videoSrc?: string }]",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroCenteredLogos",
+        "import": "import HeroCenteredLogos from '@/components/sections/hero/HeroCenteredLogos';",
+        "path": "@/components/sections/hero/HeroCenteredLogos",
+        "description": "Full-screen centered hero with background media, avatar group, and logo marquee",
+        "propsSchema": {
+          "avatarsSrc": "string[]",
+          "avatarText": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "names": "string[]",
+          "hideMedia?": "boolean",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroBrandCarousel",
+        "import": "import HeroBrandCarousel from '@/components/sections/hero/HeroBrandCarousel';",
+        "path": "@/components/sections/hero/HeroBrandCarousel",
+        "description": "Full-screen hero with carousel background, progress indicators, and large brand text",
+        "propsSchema": {
+          "brand": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "items": "({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroSplitMediaGrid",
+        "import": "import HeroSplitMediaGrid from '@/components/sections/hero/HeroSplitMediaGrid';",
+        "path": "@/components/sections/hero/HeroSplitMediaGrid",
+        "description": "Split hero with two media items in a grid",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "items": "[{ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }, { imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroSplitVerticalMarquee",
+        "import": "import HeroSplitVerticalMarquee from '@/components/sections/hero/HeroSplitVerticalMarquee';",
+        "path": "@/components/sections/hero/HeroSplitVerticalMarquee",
+        "description": "Split hero with two vertical marquee columns scrolling in opposite directions",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "leftItems": "({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })[]",
+          "rightItems": "({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroSplitVerticalMarqueeTall",
+        "import": "import HeroSplitVerticalMarqueeTall from '@/components/sections/hero/HeroSplitVerticalMarqueeTall';",
+        "path": "@/components/sections/hero/HeroSplitVerticalMarqueeTall",
+        "description": "Split hero with two vertical marquee columns (4/5 aspect ratio) scrolling in opposite directions",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "leftItems": "({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })[]",
+          "rightItems": "({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroSplitTestimonial",
+        "import": "import HeroSplitTestimonial from '@/components/sections/hero/HeroSplitTestimonial';",
+        "path": "@/components/sections/hero/HeroSplitTestimonial",
+        "description": "Split hero with rotating testimonial cards overlaid on media",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "testimonials": "({ name: string; handle: string; text: string; rating: number } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroBillboardTestimonial",
+        "import": "import HeroBillboardTestimonial from '@/components/sections/hero/HeroBillboardTestimonial';",
+        "path": "@/components/sections/hero/HeroBillboardTestimonial",
+        "description": "Billboard hero with rotating testimonial cards overlaid on media",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "testimonials": "({ name: string; handle: string; text: string; rating: number } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroExpand",
+        "import": "import HeroExpand from '@/components/sections/hero/HeroExpand';",
+        "path": "@/components/sections/hero/HeroExpand",
+        "description": "Full-screen hero with expanding video/image animation and auto-fill text",
+        "propsSchema": {
+          "title": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "onComplete?": "() => void",
+          "imageSrc?": "string", "videoSrc?": "string"
+        }
+      },
+      {
+        "name": "HeroWorkScrollStack",
+        "import": "import HeroWorkScrollStack from '@/components/sections/hero/HeroWorkScrollStack';",
+        "path": "@/components/sections/hero/HeroWorkScrollStack",
+        "description": "Hero with animated card stack that scrolls into work section",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "titleHighlight": "string",
+          "description": "string",
+          "descriptionMuted": "string",
+          "primaryButton": "{ text: string; href: string; avatarSrc: string; avatarLabel: string }",
+          "sectionTag": "string",
+          "sectionTitle": "string",
+          "sectionDescription": "string",
+          "items": "[{ title: string; description: string; imageSrc: string; tag: string }, { title: string; description: string; imageSrc: string; tag: string }, { title: string; description: string; imageSrc: string; tag: string }]",
+          "secondaryButton?": "{ text: string; href: string }",
+          "heroAnimationDelay?": "number",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroVideoScroll",
+        "import": "import HeroVideoScroll from '@/components/sections/hero/HeroVideoScroll';",
+        "path": "@/components/sections/hero/HeroVideoScroll",
+        "description": "Full-screen hero with scroll-driven video playback and bottom text",
+        "propsSchema": {
+          "videoSrc": "string",
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "bottomText": "string",
+          "avatarsSrc?": "string[]",
+          "avatarsLabel?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "HeroStickerFlip",
+        "import": "import HeroStickerFlip from '@/components/sections/hero/HeroStickerFlip';",
+        "path": "@/components/sections/hero/HeroStickerFlip",
+        "description": "Full-screen hero with flip card, draggable stickers, and social links",
+        "propsSchema": {
+          "title": "string",
+          "description": "string",
+          "imageSrc": "string",
+          "backTextSegments": "({ type: 'text'; content: string } | { type: 'highlight'; content: string } | { type: 'photo'; src: string })[]",
+          "stickerImageSrcs": "[string, string, string, string, string, string, string, string]",
+          "socialLinks": "{ iconSrc: string; href: string; label: string }[]",
+          "clickBadgeText": "string"
+        }
+      },
+      {
+        "name": "HeroPersonalLinks",
+        "import": "import HeroPersonalLinks from '@/components/sections/hero/HeroPersonalLinks';",
+        "path": "@/components/sections/hero/HeroPersonalLinks",
+        "description": "Full-screen centered hero with title segments (text + inline images), social links, and link cards",
+        "propsSchema": {
+          "titleSegments": "({ type: 'text'; content: string } | ({ type: 'media' } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })))[]",
+          "socialLinks?": "{ icon: LucideIcon; label: string; href: string }[]",
+          "linkCards": "{ icon: LucideIcon; title: string; description: string; button: { text: string; href: string } }[]"
+        }
+      }
+    ],
+    "about": [
+      {
+        "name": "AboutFeaturesSplit",
+        "import": "import AboutFeaturesSplit from '@/components/sections/about/AboutFeaturesSplit';",
+        "path": "@/components/sections/about/AboutFeaturesSplit",
+        "description": "About section with feature list on left, media on right",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "{ icon: string; title: string; description: string }[]",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "AboutMediaOverlay",
+        "import": "import AboutMediaOverlay from '@/components/sections/about/AboutMediaOverlay';",
+        "path": "@/components/sections/about/AboutMediaOverlay",
+        "description": "About section with text overlaid on media background",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "AboutTestimonial",
+        "import": "import AboutTestimonial from '@/components/sections/about/AboutTestimonial';",
+        "path": "@/components/sections/about/AboutTestimonial",
+        "description": "Testimonial section with quote and author info",
+        "propsSchema": {
+          "tag": "string",
+          "quote": "string",
+          "author": "string",
+          "role": "string",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "AboutText",
+        "import": "import AboutText from '@/components/sections/about/AboutText';",
+        "path": "@/components/sections/about/AboutText",
+        "description": "Simple centered text-only about section with title and optional buttons",
+        "propsSchema": {
+          "title": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "AboutTextSplit",
+        "import": "import AboutTextSplit from '@/components/sections/about/AboutTextSplit';",
+        "path": "@/components/sections/about/AboutTextSplit",
+        "description": "Text-only about section with title on left, descriptions on right",
+        "propsSchema": {
+          "title": "string",
+          "descriptions": "string[] // array of text paragraphs, NO imageSrc or media props",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "AboutParallax",
+        "import": "import AboutParallax from '@/components/sections/about/AboutParallax';",
+        "path": "@/components/sections/about/AboutParallax",
+        "description": "About section with parallax scrolling media and text content",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "badge?": "string",
+          "frontImageSrc?": "string", "frontVideoSrc?": "string",
+          "backImageSrc?": "string", "backVideoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "AboutParallaxHighlight",
+        "import": "import AboutParallaxHighlight from '@/components/sections/about/AboutParallaxHighlight';",
+        "path": "@/components/sections/about/AboutParallaxHighlight",
+        "description": "About section with parallax scrolling media and animated title with highlight text in serif italic",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "titleHighlight?": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "badge?": "string",
+          "frontImageSrc?": "string", "frontVideoSrc?": "string",
+          "backImageSrc?": "string", "backVideoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "AboutTestimonialParallax",
+        "import": "import AboutTestimonialParallax from '@/components/sections/about/AboutTestimonialParallax';",
+        "path": "@/components/sections/about/AboutTestimonialParallax",
+        "description": "About section with quote testimonial and parallax media with social links",
+        "propsSchema": {
+          "tag": "string",
+          "quote": "string",
+          "author": "string",
+          "role": "string",
+          "socialLinks?": "{ icon: string | LucideIcon; label: string; href?: string; onClick?: () => void }[]",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "AboutTextFill",
+        "import": "import AboutTextFill from '@/components/sections/about/AboutTextFill';",
+        "path": "@/components/sections/about/AboutTextFill",
+        "description": "About section with scroll-driven word-by-word text fill animation",
+        "propsSchema": {
+          "tag?": "string",
+          "title": "string",
+          "description?": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "imageSrc": "string", "videoSrc": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "AboutCursorTrail",
+        "import": "import AboutCursorTrail from '@/components/sections/about/AboutCursorTrail';",
+        "path": "@/components/sections/about/AboutCursorTrail",
+        "description": "About section with interactive cursor trail effect showing images on mouse movement",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "media": "[{ imageSrc?: string; videoSrc?: string }]",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      }
+    ],
+    "features": [
+      {
+        "name": "FeaturesMediaCards",
+        "import": "import FeaturesMediaCards from '@/components/sections/features/FeaturesMediaCards';",
+        "path": "@/components/sections/features/FeaturesMediaCards",
+        "description": "Features section with media cards in grid or carousel",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "({ title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesMediaSimple",
+        "import": "import FeaturesMediaSimple from '@/components/sections/features/FeaturesMediaSimple';",
+        "path": "@/components/sections/features/FeaturesMediaSimple",
+        "description": "Features section with simple media cards and inline title/description text",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "({ title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesAlternatingSplit",
+        "import": "import FeaturesAlternatingSplit from '@/components/sections/features/FeaturesAlternatingSplit';",
+        "path": "@/components/sections/features/FeaturesAlternatingSplit",
+        "description": "Features section with numbered alternating left/right split cards",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "({ title: string; description: string; primaryButton?: { text: string; href: string }; secondaryButton?: { text: string; href: string } } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesComparison",
+        "import": "import FeaturesComparison from '@/components/sections/features/FeaturesComparison';",
+        "path": "@/components/sections/features/FeaturesComparison",
+        "description": "Features comparison section with negative and positive lists side by side",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "negativeItems": "string[]",
+          "positiveItems": "string[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesDetailedSteps",
+        "import": "import FeaturesDetailedSteps from '@/components/sections/features/FeaturesDetailedSteps';",
+        "path": "@/components/sections/features/FeaturesDetailedSteps",
+        "description": "Features section with detailed step cards including tag, title, subtitle, description, and tilted media",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "steps": "({ tag: string; title: string; subtitle: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesTaggedCards",
+        "import": "import FeaturesTaggedCards from '@/components/sections/features/FeaturesTaggedCards';",
+        "path": "@/components/sections/features/FeaturesTaggedCards",
+        "description": "Features section with media cards featuring tag overlay on image and content card below",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "({ tag: string; title: string; description: string; primaryButton: { text: string; href: string } } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesArrowCards",
+        "import": "import FeaturesArrowCards from '@/components/sections/features/FeaturesArrowCards';",
+        "path": "@/components/sections/features/FeaturesArrowCards",
+        "description": "Features section with media cards featuring title, tags, and arrow icon for navigation",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "({ title: string; tags: string[] } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesDetailedCards",
+        "import": "import FeaturesDetailedCards from '@/components/sections/features/FeaturesDetailedCards';",
+        "path": "@/components/sections/features/FeaturesDetailedCards",
+        "description": "Features section with horizontal split cards featuring title, author, tags, description, and media",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "({ title: string; description: string; tags: string[] } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesMediaCarousel",
+        "import": "import FeaturesMediaCarousel from '@/components/sections/features/FeaturesMediaCarousel';",
+        "path": "@/components/sections/features/FeaturesMediaCarousel",
+        "description": "Carousel of cards with media background and text overlay at bottom",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "({ title: string; description: string; buttonIcon: string; buttonHref?: string; buttonOnClick?: () => void } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesFlipCards",
+        "import": "import FeaturesFlipCards from '@/components/sections/features/FeaturesFlipCards';",
+        "path": "@/components/sections/features/FeaturesFlipCards",
+        "description": "Grid of cards that flip on click to reveal descriptions on the back",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "({ title: string; descriptions: string[] } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesRevealCards",
+        "import": "import FeaturesRevealCards from '@/components/sections/features/FeaturesRevealCards';",
+        "path": "@/components/sections/features/FeaturesRevealCards",
+        "description": "Numbered cards with image background that reveal description on hover",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "({ title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesTimelineCards",
+        "import": "import FeaturesTimelineCards from '@/components/sections/features/FeaturesTimelineCards';",
+        "path": "@/components/sections/features/FeaturesTimelineCards",
+        "description": "Horizontal timeline with 3 clickable cards that control a large media display with progress bar animations",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "[({ title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })), ({ title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })), ({ title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesIconCards",
+        "import": "import FeaturesIconCards from '@/components/sections/features/FeaturesIconCards';",
+        "path": "@/components/sections/features/FeaturesIconCards",
+        "description": "Grid of cards with icon and interactive hover effect revealing random characters",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "features": "{ icon: string; title: string; description: string }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesBento",
+        "import": "import FeaturesBento from '@/components/sections/features/FeaturesBento';",
+        "path": "@/components/sections/features/FeaturesBento",
+        "description": "Bento grid with animated card variants including charts, orbiting icons, chat animations, and more",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "features": "({ title: string; description: string } & ({ bentoComponent: 'info-card-marquee'; infoCards: { icon: string; label: string; value: string }[] } | { bentoComponent: 'tilted-stack-cards'; stackCards: [{ icon: string; title: string; subtitle: string; detail: string }, { icon: string; title: string; subtitle: string; detail: string }, { icon: string; title: string; subtitle: string; detail: string }] } | { bentoComponent: 'animated-bar-chart' } | { bentoComponent: 'orbiting-icons'; centerIcon: string; orbitIcons: string[] } | { bentoComponent: 'icon-text-marquee'; centerIcon: string; marqueeTexts: string[] } | { bentoComponent: 'chat-marquee'; aiIcon: string; userIcon: string; exchanges: { userMessage: string; aiResponse: string }[]; placeholder: string } | { bentoComponent: 'checklist-timeline'; heading: string; subheading: string; checklistItems: [{ label: string; detail: string }, { label: string; detail: string }, { label: string; detail: string }]; completedLabel: string } | { bentoComponent: 'media-stack'; mediaItems: [{ imageSrc?: string; videoSrc?: string }, { imageSrc?: string; videoSrc?: string }, { imageSrc?: string; videoSrc?: string }] }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesBorderGlow",
+        "import": "import FeaturesBorderGlow from '@/components/sections/features/FeaturesBorderGlow';",
+        "path": "@/components/sections/features/FeaturesBorderGlow",
+        "description": "Feature cards with glowing animated border effect on hover",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "features": "{ icon: string | LucideIcon; title: string; description: string }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesBentoGrid",
+        "import": "import FeaturesBentoGrid from '@/components/sections/features/FeaturesBentoGrid';",
+        "path": "@/components/sections/features/FeaturesBentoGrid",
+        "description": "Bento grid layout with exactly 4 feature cards and standard buttons",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "features": "[{ title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })]",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesBentoGridCta",
+        "import": "import FeaturesBentoGridCta from '@/components/sections/features/FeaturesBentoGridCta';",
+        "path": "@/components/sections/features/FeaturesBentoGridCta",
+        "description": "Bento grid layout with exactly 4 feature cards and CTA button with avatar",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "features": "[{ title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })]",
+          "ctaButton?": "{ text: string; href: string; avatarSrc?: string; avatarLabel?: string }",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesCarouselMarquee",
+        "import": "import FeaturesCarouselMarquee from '@/components/sections/features/FeaturesCarouselMarquee';",
+        "path": "@/components/sections/features/FeaturesCarouselMarquee",
+        "description": "Horizontal marquee carousel with rotated label tags on each card",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "{ label: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesParallaxShowcase",
+        "import": "import FeaturesParallaxShowcase from '@/components/sections/features/FeaturesParallaxShowcase';",
+        "path": "@/components/sections/features/FeaturesParallaxShowcase",
+        "description": "Parallax section with floating images and centered title over background image or video",
+        "propsSchema": {
+          "title": "string",
+          "leftImageSrc": "string",
+          "rightImageSrc": "string",
+          "backgroundSrc?": "string", "backgroundVideoSrc?": "string"
+        }
+      },
+      {
+        "name": "FeaturesGridSplit",
+        "import": "import FeaturesGridSplit from '@/components/sections/features/FeaturesGridSplit';",
+        "path": "@/components/sections/features/FeaturesGridSplit",
+        "description": "Grid layout with 2 top feature cards and 1 bottom split card with CTA and avatars",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "topItems": "[{ title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })]",
+          "bottomItem": "{ title: string; description: string; primaryButton: { text: string; href: string }; avatarsSrc?: string[]; avatarsLabel?: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesGridSplitLarge",
+        "import": "import FeaturesGridSplitLarge from '@/components/sections/features/FeaturesGridSplitLarge';",
+        "path": "@/components/sections/features/FeaturesGridSplitLarge",
+        "description": "Grid layout with 2 top feature cards and 1 bottom split card with CTA and avatars - larger text variant",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "topItems": "[{ title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })]",
+          "bottomItem": "{ title: string; description: string; primaryButton: { text: string; href: string }; avatarsSrc?: string[]; avatarsLabel?: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesMediaGrid",
+        "import": "import FeaturesMediaGrid from '@/components/sections/features/FeaturesMediaGrid';",
+        "path": "@/components/sections/features/FeaturesMediaGrid",
+        "description": "Grid or carousel of feature cards with media and text",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "({ title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesMediaColumns",
+        "import": "import FeaturesMediaColumns from '@/components/sections/features/FeaturesMediaColumns';",
+        "path": "@/components/sections/features/FeaturesMediaColumns",
+        "description": "Two-column grid of feature cards with media and text",
+        "propsSchema": {
+          "tag?": "string",
+          "title": "string",
+          "description?": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "({ title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesResultsComparison",
+        "import": "import FeaturesResultsComparison from '@/components/sections/features/FeaturesResultsComparison';",
+        "path": "@/components/sections/features/FeaturesResultsComparison",
+        "description": "Before/after comparison marquee with treatment cards showing results",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "{ treatment: string; detail: string; beforeSrc: string; afterSrc: string }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesStickyCards",
+        "import": "import FeaturesStickyCards from '@/components/sections/features/FeaturesStickyCards';",
+        "path": "@/components/sections/features/FeaturesStickyCards",
+        "description": "Scroll-triggered sticky cards with paired media that animate in from sides with GSAP",
+        "propsSchema": {
+          "items": "({ title: string; description: string; primaryButton?: { text: string; href: string }; secondaryButton?: { text: string; href: string } } & ({ leftImageSrc: string; leftVideoSrc?: never } | { leftVideoSrc: string; leftImageSrc?: never }) & ({ rightImageSrc: string; rightVideoSrc?: never } | { rightVideoSrc: string; rightImageSrc?: never }))[]"
+        }
+      },
+      {
+        "name": "FeaturesFilterGrid",
+        "import": "import FeaturesFilterGrid from '@/components/sections/features/FeaturesFilterGrid';",
+        "path": "@/components/sections/features/FeaturesFilterGrid",
+        "description": "Filterable grid of cards with animated category toggle buttons",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "categories": "string[]",
+          "items": "({ name: string; category: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      }
+    ],
+    "product": [
+      {
+        "name": "ProductMediaCards",
+        "import": "import ProductMediaCards from '@/components/sections/product/ProductMediaCards';",
+        "path": "@/components/sections/product/ProductMediaCards",
+        "description": "Product grid with image, name, price, and arrow button",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "products?": "{ name: string; price: string; imageSrc: string; onClick?: () => void }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "ProductRatingCards",
+        "import": "import ProductRatingCards from '@/components/sections/product/ProductRatingCards';",
+        "path": "@/components/sections/product/ProductRatingCards",
+        "description": "Product grid with brand, name, star rating, review count, and price",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "products?": "{ brand: string; name: string; price: string; rating: number; reviewCount: string; imageSrc: string; onClick?: () => void }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "ProductQuantityCards",
+        "import": "import ProductQuantityCards from '@/components/sections/product/ProductQuantityCards';",
+        "path": "@/components/sections/product/ProductQuantityCards",
+        "description": "Product grid with quantity controls and add to cart button",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "products?": "{ name: string; price: string; imageSrc: string; onAddToCart?: (quantity: number) => void }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "ProductVariantCards",
+        "import": "import ProductVariantCards from '@/components/sections/product/ProductVariantCards';",
+        "path": "@/components/sections/product/ProductVariantCards",
+        "description": "Product grid with name, variant/color, and price",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "products?": "{ name: string; variant: string; price: string; imageSrc: string; onClick?: () => void }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "ProductVariantCardsHighlight",
+        "import": "import ProductVariantCardsHighlight from '@/components/sections/product/ProductVariantCardsHighlight';",
+        "path": "@/components/sections/product/ProductVariantCardsHighlight",
+        "description": "Product grid with name, variant/color, price, and animated title with highlight text in serif italic",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "titleHighlight?": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "products?": "{ name: string; variant: string; price: string; imageSrc: string; onClick?: () => void }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesImageBento",
+        "import": "import FeaturesImageBento from '@/components/sections/features/FeaturesImageBento';",
+        "path": "@/components/sections/features/FeaturesImageBento",
+        "description": "Bento grid of images with exactly 7 items that zoom on hover with glass card title and description overlay",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "[{ title: string; description: string; href?: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string; href?: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string; href?: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string; href?: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string; href?: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string; href?: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string; href?: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesRevealCardsBento",
+        "import": "import FeaturesRevealCardsBento from '@/components/sections/features/FeaturesRevealCardsBento';",
+        "path": "@/components/sections/features/FeaturesRevealCardsBento",
+        "description": "Bento grid of reveal cards with exactly 7 items that reveal description on hover",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "[{ title: string; description: string; href: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string; href: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string; href: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string; href: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string; href: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string; href: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }), { title: string; description: string; href: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FeaturesAttributeCards",
+        "import": "import FeaturesAttributeCards from '@/components/sections/features/FeaturesAttributeCards';",
+        "path": "@/components/sections/features/FeaturesAttributeCards",
+        "description": "Cards with image, title, tags, badge, and detail attributes with icons",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "({ title: string; tags: string; badge?: string | null; details: { icon: string | LucideIcon; label: string; value: string | number }[] } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      }
+    ],
+    "pricing": [
+      {
+        "name": "PricingSimpleCards",
+        "import": "import PricingSimpleCards from '@/components/sections/pricing/PricingSimpleCards';",
+        "path": "@/components/sections/pricing/PricingSimpleCards",
+        "description": "Simple pricing cards with title, price, description, and feature list",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "plans": "{ tag: string; price: string; description: string; features: string[] }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "PricingCenteredCards",
+        "import": "import PricingCenteredCards from '@/components/sections/pricing/PricingCenteredCards';",
+        "path": "@/components/sections/pricing/PricingCenteredCards",
+        "description": "Centered pricing cards with per-plan buttons above features list",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "plans": "{ tag: string; price: string; description: string; features: string[]; primaryButton: { text: string; href: string }; secondaryButton?: { text: string; href: string } }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "PricingHighlightedCards",
+        "import": "import PricingHighlightedCards from '@/components/sections/pricing/PricingHighlightedCards';",
+        "path": "@/components/sections/pricing/PricingHighlightedCards",
+        "description": "Pricing cards with optional highlight badge above selected cards",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "plans": "{ tag: string; price: string; description: string; features: string[]; highlight?: string; primaryButton: { text: string; href: string }; secondaryButton?: { text: string; href: string } }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "PricingSplitCards",
+        "import": "import PricingSplitCards from '@/components/sections/pricing/PricingSplitCards';",
+        "path": "@/components/sections/pricing/PricingSplitCards",
+        "description": "Split layout pricing cards with price/CTA on left, features on right",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "plans": "{ tag: string; price: string; period: string; description: string; primaryButton: { text: string; href: string }; secondaryButton?: { text: string; href: string }; featuresTitle: string; features: string[] }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "PricingLayeredCards",
+        "import": "import PricingLayeredCards from '@/components/sections/pricing/PricingLayeredCards';",
+        "path": "@/components/sections/pricing/PricingLayeredCards",
+        "description": "Layered card design with highlighted inner section containing price/CTA and features below",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "plans": "{ tag: string; price: string; description: string; primaryButton: { text: string; href: string }; secondaryButton?: { text: string; href: string }; features: string[] }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "PricingMediaCards",
+        "import": "import PricingMediaCards from '@/components/sections/pricing/PricingMediaCards';",
+        "path": "@/components/sections/pricing/PricingMediaCards",
+        "description": "Split layout pricing cards with media on left, pricing info and features on right",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "plans": "({ tag: string; price: string; period: string; features: string[]; primaryButton: { text: string; href: string } } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      }
+    ],
+    "metrics": [
+      {
+        "name": "MetricsSimpleCards",
+        "import": "import MetricsSimpleCards from '@/components/sections/metrics/MetricsSimpleCards';",
+        "path": "@/components/sections/metrics/MetricsSimpleCards",
+        "description": "Simple metrics cards with large value and description text",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "metrics": "{ value: string; description: string }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "MetricsIconCards",
+        "import": "import MetricsIconCards from '@/components/sections/metrics/MetricsIconCards';",
+        "path": "@/components/sections/metrics/MetricsIconCards",
+        "description": "Centered metrics cards with icon, title, and large value",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "metrics": "{ icon: string; title: string; value: string }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "MetricsFeatureCards",
+        "import": "import MetricsFeatureCards from '@/components/sections/metrics/MetricsFeatureCards';",
+        "path": "@/components/sections/metrics/MetricsFeatureCards",
+        "description": "Metrics cards with large value, title, divider, and feature checklist",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "metrics": "{ value: string; title: string; features: string[] }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "MetricsMediaCards",
+        "import": "import MetricsMediaCards from '@/components/sections/metrics/MetricsMediaCards';",
+        "path": "@/components/sections/metrics/MetricsMediaCards",
+        "description": "Split layout metrics with text card and media side by side, alternating order",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "metrics": "({ value: string; title: string; description: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      }
+    ],
+    "team": [
+      {
+        "name": "TeamProfileCards",
+        "import": "import TeamProfileCards from '@/components/sections/team/TeamProfileCards';",
+        "path": "@/components/sections/team/TeamProfileCards",
+        "description": "Profile cards with avatar, verified badge, CTA button, and hover-reveal description",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "({ title: string; description: string; avatarSrc: string; buttonText: string; buttonHref?: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "TeamOverlayCards",
+        "import": "import TeamOverlayCards from '@/components/sections/team/TeamOverlayCards';",
+        "path": "@/components/sections/team/TeamOverlayCards",
+        "description": "Team member cards with portrait media and overlay containing name and role badge",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "members": "({ name: string; role: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "TeamOverlayCardsGrid",
+        "import": "import TeamOverlayCardsGrid from '@/components/sections/team/TeamOverlayCardsGrid';",
+        "path": "@/components/sections/team/TeamOverlayCardsGrid",
+        "description": "Team member cards with portrait media and overlay, always displayed in a 3-column grid layout",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "members": "({ name: string; role: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "TeamDetailedCards",
+        "import": "import TeamDetailedCards from '@/components/sections/team/TeamDetailedCards';",
+        "path": "@/components/sections/team/TeamDetailedCards",
+        "description": "Full-bleed team cards with detailed overlay including name, role, description, and social links",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "members": "({ name: string; role: string; description: string; socialLinks: { icon: string; url: string }[] } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "TeamStackedCards",
+        "import": "import TeamStackedCards from '@/components/sections/team/TeamStackedCards';",
+        "path": "@/components/sections/team/TeamStackedCards",
+        "description": "Overlapping team cards with square media, name, and role centered below",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "members": "({ name: string; role: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "TeamGlassCards",
+        "import": "import TeamGlassCards from '@/components/sections/team/TeamGlassCards';",
+        "path": "@/components/sections/team/TeamGlassCards",
+        "description": "Full-bleed team cards with glassmorphism blur overlay and white text",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "members": "({ name: string; role: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "TeamListCards",
+        "import": "import TeamListCards from '@/components/sections/team/TeamListCards';",
+        "path": "@/components/sections/team/TeamListCards",
+        "description": "Grouped team members in list format with image, name, role, and detail",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "groups": "{ title: string; members: ({ name: string; role: string; detail: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[] }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      }
+    ],
+    "testimonial": [
+      {
+        "name": "TestimonialOverlayCards",
+        "import": "import TestimonialOverlayCards from '@/components/sections/testimonial/TestimonialOverlayCards';",
+        "path": "@/components/sections/testimonial/TestimonialOverlayCards",
+        "description": "Testimonial cards with full-bleed image and overlay showing rating, name, role, and company",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "testimonials": "({ name: string; role: string; company: string; rating: number } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "TestimonialQuoteCards",
+        "import": "import TestimonialQuoteCards from '@/components/sections/testimonial/TestimonialQuoteCards';",
+        "path": "@/components/sections/testimonial/TestimonialQuoteCards",
+        "description": "Testimonial cards with image or icon, name, role, and quote text",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "testimonials": "({ name: string; role: string; quote: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "TestimonialSplitCards",
+        "import": "import TestimonialSplitCards from '@/components/sections/testimonial/TestimonialSplitCards';",
+        "path": "@/components/sections/testimonial/TestimonialSplitCards",
+        "description": "Split testimonial carousel with text on left and media on right",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "testimonials": "({ tag: string; title: string; quote: string; name: string; date: string } & ({ avatarImageSrc: string; avatarVideoSrc?: never } | { avatarVideoSrc: string; avatarImageSrc?: never }) & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "TestimonialMarqueeCards",
+        "import": "import TestimonialMarqueeCards from '@/components/sections/testimonial/TestimonialMarqueeCards';",
+        "path": "@/components/sections/testimonial/TestimonialMarqueeCards",
+        "description": "Dual marquee rows of testimonial cards scrolling in opposite directions",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "testimonials": "({ name: string; role: string; quote: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "TestimonialColumnMarqueeCards",
+        "import": "import TestimonialColumnMarqueeCards from '@/components/sections/testimonial/TestimonialColumnMarqueeCards';",
+        "path": "@/components/sections/testimonial/TestimonialColumnMarqueeCards",
+        "description": "Three-column vertical marquee of testimonial cards with quote icons",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "testimonials": "({ name: string; role: string; quote: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "TestimonialDetailedCards",
+        "import": "import TestimonialDetailedCards from '@/components/sections/testimonial/TestimonialDetailedCards';",
+        "path": "@/components/sections/testimonial/TestimonialDetailedCards",
+        "description": "Split layout testimonial with quote card and media, navigated with arrow buttons",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "testimonials": "({ title: string; quote: string; name: string; role: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "TestimonialDetailedCardsHighlight",
+        "import": "import TestimonialDetailedCardsHighlight from '@/components/sections/testimonial/TestimonialDetailedCardsHighlight';",
+        "path": "@/components/sections/testimonial/TestimonialDetailedCardsHighlight",
+        "description": "Split layout testimonial with quote card and media, animated title with highlight text in serif italic",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "titleHighlight?": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "testimonials": "({ title: string; quote: string; name: string; role: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "TestimonialAvatarCard",
+        "import": "import TestimonialAvatarCard from '@/components/sections/testimonial/TestimonialAvatarCard';",
+        "path": "@/components/sections/testimonial/TestimonialAvatarCard",
+        "description": "Social proof card with overlapping avatar group and call-to-action",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "avatars": "({ name: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "TestimonialRatingCards",
+        "import": "import TestimonialRatingCards from '@/components/sections/testimonial/TestimonialRatingCards';",
+        "path": "@/components/sections/testimonial/TestimonialRatingCards",
+        "description": "Testimonial cards with star ratings, quote, and author info",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "testimonials": "({ name: string; role: string; quote: string; rating: number } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "TestimonialTrustCard",
+        "import": "import TestimonialTrustCard from '@/components/sections/testimonial/TestimonialTrustCard';",
+        "path": "@/components/sections/testimonial/TestimonialTrustCard",
+        "description": "Social proof testimonial with star rating, large quote, author text, and avatar group",
+        "propsSchema": {
+          "quote": "string",
+          "rating": "number",
+          "author": "string",
+          "avatars": "({ name: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "TestimonialMarqueeOverlayCards",
+        "import": "import TestimonialMarqueeOverlayCards from '@/components/sections/testimonial/TestimonialMarqueeOverlayCards';",
+        "path": "@/components/sections/testimonial/TestimonialMarqueeOverlayCards",
+        "description": "Infinite scrolling marquee of testimonial cards with portrait media and overlay info showing rating, name, role, and company",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "testimonials": "({ name: string; role: string; company: string; rating: number } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never }))[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      }
+    ],
+    "social-proof": [
+      {
+        "name": "SocialProofMarquee",
+        "import": "import SocialProofMarquee from '@/components/sections/social-proof/SocialProofMarquee';",
+        "path": "@/components/sections/social-proof/SocialProofMarquee",
+        "description": "Scrolling marquee of brand/company names with header section",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "names": "string[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      }
+    ],
+    "faq": [
+      {
+        "name": "FaqSimple",
+        "import": "import FaqSimple from '@/components/sections/faq/FaqSimple';",
+        "path": "@/components/sections/faq/FaqSimple",
+        "description": "Simple FAQ section with expandable accordion items",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "{ question: string; answer: string }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FaqSimpleHighlight",
+        "import": "import FaqSimpleHighlight from '@/components/sections/faq/FaqSimpleHighlight';",
+        "path": "@/components/sections/faq/FaqSimpleHighlight",
+        "description": "Simple FAQ section with expandable accordion items and animated title with highlight text in serif italic",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "titleHighlight?": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "{ question: string; answer: string }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FaqTwoColumn",
+        "import": "import FaqTwoColumn from '@/components/sections/faq/FaqTwoColumn';",
+        "path": "@/components/sections/faq/FaqTwoColumn",
+        "description": "Two-column FAQ section with items split across columns",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "{ question: string; answer: string }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FaqSplitMedia",
+        "import": "import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';",
+        "path": "@/components/sections/faq/FaqSplitMedia",
+        "description": "Split layout FAQ with media on left and accordion items on right",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items": "{ question: string; answer: string }[]",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "FaqTabbedAccordion",
+        "import": "import FaqTabbedAccordion from '@/components/sections/faq/FaqTabbedAccordion';",
+        "path": "@/components/sections/faq/FaqTabbedAccordion",
+        "description": "Tabbed FAQ section with category selector and optional CTA with avatar",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "categories": "{ name: string; items: { question: string; answer: string }[] }[]",
+          "cta?": "{ name: string; role: string; buttonText: string; buttonHref: string } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      }
+    ],
+    "blog": [
+      {
+        "name": "BlogSimpleCards",
+        "import": "import BlogSimpleCards from '@/components/sections/blog/BlogSimpleCards';",
+        "path": "@/components/sections/blog/BlogSimpleCards",
+        "description": "Simple blog cards with image at top, category badge, title, excerpt, and author info at bottom",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items?": "{ category: string; title: string; excerpt: string; authorName: string; authorImageSrc: string; date: string; imageSrc: string; href?: string; onClick?: () => void }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "BlogTagCards",
+        "import": "import BlogTagCards from '@/components/sections/blog/BlogTagCards';",
+        "path": "@/components/sections/blog/BlogTagCards",
+        "description": "Blog cards with author info at top and tag badges at bottom",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items?": "{ title: string; excerpt: string; authorName: string; authorImageSrc: string; date: string; tags: string[]; imageSrc: string; href?: string; onClick?: () => void }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "BlogMediaCards",
+        "import": "import BlogMediaCards from '@/components/sections/blog/BlogMediaCards';",
+        "path": "@/components/sections/blog/BlogMediaCards",
+        "description": "Blog cards with content at top and square media at bottom",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "primaryButton?": "{ text: string; href: string }",
+          "secondaryButton?": "{ text: string; href: string }",
+          "items?": "{ category: string; title: string; excerpt: string; authorName: string; authorImageSrc: string; date: string; imageSrc: string; href?: string; onClick?: () => void }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "BlogArticle",
+        "import": "import BlogArticle from '@/components/sections/blog/BlogArticle';",
+        "path": "@/components/sections/blog/BlogArticle",
+        "description": "Full blog article page with breadcrumb navigation, title, excerpt, author info, featured image, and HTML content",
+        "propsSchema": {
+          "category": "string",
+          "title": "string",
+          "excerpt?": "string",
+          "content": "string",
+          "imageSrc": "string",
+          "authorName": "string",
+          "authorImageSrc": "string",
+          "date": "string",
+          "readingTime?": "string",
+          "backButton?": "{ text: string; href: string }"
+        }
+      }
+    ],
+    "contact": [
+      {
+        "name": "ContactCenter",
+        "import": "import ContactCenter from '@/components/sections/contact/ContactCenter';",
+        "path": "@/components/sections/contact/ContactCenter",
+        "description": "Centered contact section with email signup form inside a card",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "inputPlaceholder": "string",
+          "buttonText": "string",
+          "onSubmit?": "(email: string) => void",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "ContactSplitEmail",
+        "import": "import ContactSplitEmail from '@/components/sections/contact/ContactSplitEmail';",
+        "path": "@/components/sections/contact/ContactSplitEmail",
+        "description": "Split layout contact section with email signup form on left and media on right",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "inputPlaceholder": "string",
+          "buttonText": "string",
+          "onSubmit?": "(email: string) => void",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "ContactSplitForm",
+        "import": "import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';",
+        "path": "@/components/sections/contact/ContactSplitForm",
+        "description": "Split layout contact section with multi-field form on left and media on right",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "inputs": "{ name: string; type: string; placeholder: string; required?: boolean }[]",
+          "textarea?": "{ name: string; placeholder: string; rows?: number; required?: boolean }",
+          "buttonText": "string",
+          "onSubmit?": "(data: Record<string, string>) => void",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "ContactSplitFormParallax",
+        "import": "import ContactSplitFormParallax from '@/components/sections/contact/ContactSplitFormParallax';",
+        "path": "@/components/sections/contact/ContactSplitFormParallax",
+        "description": "Split layout contact section with multi-field form on left and parallax media with CTA links on right",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "description": "string",
+          "inputs": "{ name: string; type: string; placeholder: string; required?: boolean }[]",
+          "textarea?": "{ name: string; placeholder: string; rows?: number; required?: boolean }",
+          "buttonText": "string",
+          "onSubmit?": "(data: Record<string, string>) => void",
+          "ctaLinks?": "{ icon: string | LucideIcon; label: string; href?: string; onClick?: () => void }[]",
+          "imageSrc?": "string", "videoSrc?": "string",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "ContactParallaxCard",
+        "import": "import ContactParallaxCard from '@/components/sections/contact/ContactParallaxCard';",
+        "path": "@/components/sections/contact/ContactParallaxCard",
+        "description": "Full-screen parallax contact section with glassmorphic form card overlay",
+        "propsSchema": {
+          "title": "string",
+          "inputs": "{ name: string; type: string; placeholder: string; required?: boolean }[]",
+          "textarea?": "{ name: string; placeholder: string; rows?: number; required?: boolean }",
+          "buttonText": "string",
+          "footerText": "string",
+          "footerLink": "{ text: string; href: string; imageSrc: string }",
+          "onSubmit?": "(data: Record<string, string>) => void",
+          "imageSrc?": "string", "videoSrc?": "string"
+        }
+      },
+      {
+        "name": "ContactCta",
+        "import": "import ContactCta from '@/components/sections/contact/ContactCta';",
+        "path": "@/components/sections/contact/ContactCta",
+        "description": "Centered call-to-action section with tag, large heading and buttons",
+        "propsSchema": {
+          "tag": "string",
+          "text": "string",
+          "primaryButton": "{ text: string; href: string }",
+          "secondaryButton": "{ text: string; href: string }",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      },
+      {
+        "name": "ContactBar",
+        "import": "import ContactBar from '@/components/sections/contact/ContactBar';",
+        "path": "@/components/sections/contact/ContactBar",
+        "description": "Contact bar with icon circles for different contact methods like phone, email, and social links",
+        "propsSchema": {
+          "tag": "string",
+          "title": "string",
+          "options": "{ icon: LucideIcon; label: string; href: string }[]",
+          "textAnimation": "\"slide-up\" | \"fade-blur\" | \"fade\""
+        }
+      }
+    ],
+    "legal": [
+      {
+        "name": "PolicyContent",
+        "import": "import PolicyContent from '@/components/sections/legal/PolicyContent';",
+        "path": "@/components/sections/legal/PolicyContent",
+        "description": "Policy content section for privacy policies, terms of service, etc.",
+        "propsSchema": {
+          "title": "string",
+          "subtitle?": "string",
+          "sections": "{ heading: string; content: ({ type: 'paragraph'; text: string } | { type: 'list'; items: string[] } | { type: 'numbered-list'; items: string[] })[] }[]"
+        }
+      }
+    ],
+    "footer": [
+      {
+        "name": "FooterSimple",
+        "import": "import FooterSimple from '@/components/sections/footer/FooterSimple';",
+        "path": "@/components/sections/footer/FooterSimple",
+        "description": "Simple footer with logo, column links, copyright and bottom links",
+        "propsSchema": {
+          "brand": "string",
+          "columns": "{ title: string; items: { label: string; href?: string; onClick?: () => void }[] }[]",
+          "copyright": "string",
+          "links": "{ label: string; href?: string; onClick?: () => void }[]"
+        }
+      },
+      {
+        "name": "FooterSimpleReveal",
+        "import": "import FooterSimpleReveal from '@/components/sections/footer/FooterSimpleReveal';",
+        "path": "@/components/sections/footer/FooterSimpleReveal",
+        "description": "Simple footer with reveal effect that appears fixed as you scroll",
+        "propsSchema": {
+          "brand": "string",
+          "columns": "{ title: string; items: { label: string; href?: string; onClick?: () => void }[] }[]",
+          "copyright": "string",
+          "links": "{ label: string; href?: string; onClick?: () => void }[]"
+        }
+      },
+      {
+        "name": "FooterBrand",
+        "import": "import FooterBrand from '@/components/sections/footer/FooterBrand';",
+        "path": "@/components/sections/footer/FooterBrand",
+        "description": "Footer with full-width brand text and chevron icon links",
+        "propsSchema": {
+          "brand": "string",
+          "columns": "{ items: { label: string; href?: string; onClick?: () => void }[] }[]"
+        }
+      },
+      {
+        "name": "FooterBrandReveal",
+        "import": "import FooterBrandReveal from '@/components/sections/footer/FooterBrandReveal';",
+        "path": "@/components/sections/footer/FooterBrandReveal",
+        "description": "Footer with full-width brand text and reveal effect",
+        "propsSchema": {
+          "brand": "string",
+          "columns": "{ items: { label: string; href?: string; onClick?: () => void }[] }[]"
+        }
+      },
+      {
+        "name": "FooterMinimal",
+        "import": "import FooterMinimal from '@/components/sections/footer/FooterMinimal';",
+        "path": "@/components/sections/footer/FooterMinimal",
+        "description": "Minimal footer with full-width brand text, copyright, and social links",
+        "propsSchema": {
+          "brand": "string",
+          "copyright": "string",
+          "socialLinks?": "{ icon: string; href?: string; onClick?: () => void }[]"
+        }
+      },
+      {
+        "name": "FooterSimpleCard",
+        "import": "import FooterSimpleCard from '@/components/sections/footer/FooterSimpleCard';",
+        "path": "@/components/sections/footer/FooterSimpleCard",
+        "description": "Simple footer with columns wrapped in a card container",
+        "propsSchema": {
+          "brand": "string",
+          "columns": "{ title: string; items: { label: string; href?: string; onClick?: () => void }[] }[]",
+          "copyright": "string",
+          "links": "{ label: string; href?: string; onClick?: () => void }[]"
+        }
+      },
+      {
+        "name": "FooterSimpleMedia",
+        "import": "import FooterSimpleMedia from '@/components/sections/footer/FooterSimpleMedia';",
+        "path": "@/components/sections/footer/FooterSimpleMedia",
+        "description": "Footer with media section above and simple columns below",
+        "propsSchema": {
+          "imageSrc?": "string", "videoSrc?": "string",
+          "brand": "string",
+          "columns": "{ title: string; items: { label: string; href?: string; onClick?: () => void }[] }[]",
+          "copyright": "string",
+          "links": "{ label: string; href?: string; onClick?: () => void }[]"
+        }
+      },
+      {
+        "name": "FooterBasic",
+        "import": "import FooterBasic from '@/components/sections/footer/FooterBasic';",
+        "path": "@/components/sections/footer/FooterBasic",
+        "description": "Basic footer with columns and two text lines at bottom",
+        "propsSchema": {
+          "columns": "{ title: string; items: { label: string; href?: string; onClick?: () => void }[] }[]",
+          "leftText": "string",
+          "rightText": "string"
+        }
+      }
+    ]
+  },
+  "ui": [
+    {
+      "name": "Button",
+      "import": "import Button from '@/components/ui/Button';",
+      "path": "@/components/ui/Button",
+      "description": "Primary or secondary button with optional animation",
+      "propsSchema": {
+        "text": "string",
+        "variant?": "'primary' | 'secondary'",
+        "href?": "string",
+        "onClick?": "() => void",
+        "animate?": "boolean",
+        "animationDelay?": "number",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "ButtonArrow",
+      "import": "import ButtonArrow from '@/components/ui/ButtonArrow';",
+      "path": "@/components/ui/ButtonArrow",
+      "description": "Button with arrow icon and hover animation effect",
+      "propsSchema": {
+        "text": "string",
+        "variant?": "'primary' | 'secondary'",
+        "href?": "string",
+        "onClick?": "() => void",
+        "animate?": "boolean",
+        "animationDelay?": "number",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "ButtonBounce",
+      "import": "import ButtonBounce from '@/components/ui/ButtonBounce';",
+      "path": "@/components/ui/ButtonBounce",
+      "description": "Button with bounce scale and rotating text effect on hover",
+      "propsSchema": {
+        "text": "string",
+        "variant?": "'primary' | 'secondary'",
+        "href?": "string",
+        "onClick?": "() => void",
+        "animate?": "boolean",
+        "animationDelay?": "number",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "ButtonBubble",
+      "import": "import ButtonBubble from '@/components/ui/ButtonBubble';",
+      "path": "@/components/ui/ButtonBubble",
+      "description": "Button with bubble slide hover animation effect",
+      "propsSchema": {
+        "text": "string",
+        "variant?": "'primary' | 'secondary'",
+        "href?": "string",
+        "onClick?": "() => void",
+        "animate?": "boolean",
+        "animationDelay?": "number",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "ButtonElastic",
+      "import": "import ButtonElastic from '@/components/ui/ButtonElastic';",
+      "path": "@/components/ui/ButtonElastic",
+      "description": "Button with elastic stretch effect on hover",
+      "propsSchema": {
+        "text": "string",
+        "variant?": "'primary' | 'secondary'",
+        "href?": "string",
+        "onClick?": "() => void",
+        "animate?": "boolean",
+        "animationDelay?": "number",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "ButtonExpand",
+      "import": "import ButtonExpand from '@/components/ui/ButtonExpand';",
+      "path": "@/components/ui/ButtonExpand",
+      "description": "Button with expanding background hover animation",
+      "propsSchema": {
+        "text": "string",
+        "variant?": "'primary' | 'secondary'",
+        "href?": "string",
+        "onClick?": "() => void",
+        "animate?": "boolean",
+        "animationDelay?": "number",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "ButtonFlip",
+      "import": "import ButtonFlip from '@/components/ui/ButtonFlip';",
+      "path": "@/components/ui/ButtonFlip",
+      "description": "Button with 3D flip animation and staggered character transforms on hover",
+      "propsSchema": {
+        "text": "string",
+        "variant?": "'primary' | 'secondary'",
+        "href?": "string",
+        "onClick?": "() => void",
+        "animate?": "boolean",
+        "animationDelay?": "number",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "ButtonMagnetic",
+      "import": "import ButtonMagnetic from '@/components/ui/ButtonMagnetic';",
+      "path": "@/components/ui/ButtonMagnetic",
+      "description": "Button that follows cursor with magnetic effect",
+      "propsSchema": {
+        "text": "string",
+        "variant?": "'primary' | 'secondary'",
+        "href?": "string",
+        "onClick?": "() => void",
+        "animate?": "boolean",
+        "animationDelay?": "number",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "ButtonPill",
+      "import": "import ButtonPill from '@/components/ui/ButtonPill';",
+      "path": "@/components/ui/ButtonPill",
+      "description": "Button that transitions from rounded to pill shape on hover",
+      "propsSchema": {
+        "text": "string",
+        "variant?": "'primary' | 'secondary'",
+        "href?": "string",
+        "onClick?": "() => void",
+        "animate?": "boolean",
+        "animationDelay?": "number",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "ButtonShift",
+      "import": "import ButtonShift from '@/components/ui/ButtonShift';",
+      "path": "@/components/ui/ButtonShift",
+      "description": "Button with text shift animation on hover",
+      "propsSchema": {
+        "text": "string",
+        "variant?": "'primary' | 'secondary'",
+        "href?": "string",
+        "onClick?": "() => void",
+        "animate?": "boolean",
+        "animationDelay?": "number",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "ButtonSlide",
+      "import": "import ButtonSlide from '@/components/ui/ButtonSlide';",
+      "path": "@/components/ui/ButtonSlide",
+      "description": "Button with sliding arrow icon animation on hover",
+      "propsSchema": {
+        "text": "string",
+        "variant?": "'primary' | 'secondary'",
+        "href?": "string",
+        "onClick?": "() => void",
+        "animate?": "boolean",
+        "animationDelay?": "number",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "ButtonStagger",
+      "import": "import ButtonStagger from '@/components/ui/ButtonStagger';",
+      "path": "@/components/ui/ButtonStagger",
+      "description": "Button with staggered character animation on hover",
+      "propsSchema": {
+        "text": "string",
+        "variant?": "'primary' | 'secondary'",
+        "href?": "string",
+        "onClick?": "() => void",
+        "animate?": "boolean",
+        "animationDelay?": "number",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "ImageOrVideo",
+      "import": "import ImageOrVideo from '@/components/ui/ImageOrVideo';",
+      "path": "@/components/ui/ImageOrVideo",
+      "description": "Renders image or video based on provided src",
+      "propsSchema": {
+        "imageSrc?": "string",
+        "videoSrc?": "string",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "ScrollReveal",
+      "import": "import ScrollReveal from '@/components/ui/ScrollReveal';",
+      "path": "@/components/ui/ScrollReveal",
+      "description": "Wrapper that animates children into view on scroll",
+      "propsSchema": {
+        "children": "ReactNode",
+        "variant?": "'slide-up' | 'fade-blur' | 'fade'",
+        "delay?": "number",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "TextAnimation",
+      "import": "import TextAnimation from '@/components/ui/TextAnimation';",
+      "path": "@/components/ui/TextAnimation",
+      "description": "Animated text with staggered word animations",
+      "propsSchema": {
+        "text": "string",
+        "variant": "'slide-up' | 'fade-blur' | 'fade'",
+        "gradientText": "boolean",
+        "tag?": "'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span' | 'div'",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "GridOrCarousel",
+      "import": "import GridOrCarousel from '@/components/ui/GridOrCarousel';",
+      "path": "@/components/ui/GridOrCarousel",
+      "description": "Grid layout that switches to carousel when items exceed threshold",
+      "propsSchema": {
+        "children": "ReactNode",
+        "carouselThreshold?": "2 | 3 | 4"
+      }
+    },
+    {
+      "name": "LoopCarousel",
+      "import": "import LoopCarousel from '@/components/ui/LoopCarousel';",
+      "path": "@/components/ui/LoopCarousel",
+      "description": "Looping carousel with center alignment and arrow navigation",
+      "propsSchema": {
+        "children": "ReactNode"
+      }
+    },
+    {
+      "name": "NavbarCentered",
+      "import": "import NavbarCentered from '@/components/ui/NavbarCentered';",
+      "path": "@/components/ui/NavbarCentered",
+      "description": "Centered navigation bar with logo, links and buttons",
+      "propsSchema": {
+        "logo": "string",
+        "navItems": "{ name: string; href: string }[]",
+        "ctaButton": "{ text: string; href: string }"
+      }
+    },
+    {
+      "name": "NavbarCenteredOverlay",
+      "import": "import NavbarCenteredOverlay from '@/components/ui/NavbarCenteredOverlay';",
+      "path": "@/components/ui/NavbarCenteredOverlay",
+      "description": "Centered navigation bar for overlay hero sections with light text on dark backgrounds",
+      "propsSchema": {
+        "logo": "string",
+        "navItems": "{ name: string; href: string }[]",
+        "ctaButton": "{ text: string; href: string }"
+      }
+    },
+    {
+      "name": "NavbarFloating",
+      "import": "import NavbarFloating from '@/components/ui/NavbarFloating';",
+      "path": "@/components/ui/NavbarFloating",
+      "description": "Floating card navbar with expandable menu and overlay",
+      "propsSchema": {
+        "logo": "string",
+        "navItems": "{ name: string; href: string }[]",
+        "ctaButton": "{ text: string; href: string }"
+      }
+    },
+    {
+      "name": "NavbarFloatingLogo",
+      "import": "import NavbarFloatingLogo from '@/components/ui/NavbarFloatingLogo';",
+      "path": "@/components/ui/NavbarFloatingLogo",
+      "description": "Floating navbar with logo image and expandable mobile menu",
+      "propsSchema": {
+        "logo": "string",
+        "logoImageSrc": "string",
+        "navItems": "{ name: string; href: string }[]",
+        "ctaButton": "{ text: string; href: string }"
+      }
+    },
+    {
+      "name": "NavbarDropdown",
+      "import": "import NavbarDropdown from '@/components/ui/NavbarDropdown';",
+      "path": "@/components/ui/NavbarDropdown",
+      "description": "Floating navbar with hamburger that opens dropdown menu",
+      "propsSchema": {
+        "logo": "string",
+        "navItems": "{ name: string; href: string }[]",
+        "ctaButton": "{ text: string; href: string }"
+      }
+    },
+    {
+      "name": "NavbarFullscreen",
+      "import": "import NavbarFullscreen from '@/components/ui/NavbarFullscreen';",
+      "path": "@/components/ui/NavbarFullscreen",
+      "description": "Fullscreen overlay navbar with staggered link animations",
+      "propsSchema": {
+        "logo": "string",
+        "navItems": "{ name: string; href: string }[]",
+        "ctaButton": "{ text: string; href: string }"
+      }
+    },
+    {
+      "name": "NavbarFullscreenStatic",
+      "import": "import NavbarFullscreenStatic from '@/components/ui/NavbarFullscreenStatic';",
+      "path": "@/components/ui/NavbarFullscreenStatic",
+      "description": "Non-fixed fullscreen overlay navbar that scrolls with page",
+      "propsSchema": {
+        "logo": "string",
+        "navItems": "{ name: string; href: string }[]",
+        "ctaButton": "{ text: string; href: string }"
+      }
+    },
+    {
+      "name": "NavbarInline",
+      "import": "import NavbarInline from '@/components/ui/NavbarInline';",
+      "path": "@/components/ui/NavbarInline",
+      "description": "Floating card navbar with centered inline nav links",
+      "propsSchema": {
+        "logo": "string",
+        "navItems": "{ name: string; href: string }[]",
+        "ctaButton": "{ text: string; href: string }"
+      }
+    },
+    {
+      "name": "Transition",
+      "import": "import Transition from '@/components/ui/Transition';",
+      "path": "@/components/ui/Transition",
+      "description": "Wrapper that animates children on scroll into view",
+      "propsSchema": {
+        "children": "ReactNode",
+        "className?": "string",
+        "transitionType?": "'full' | 'fade'"
+      }
+    },
+    {
+      "name": "PageTransitionSwirl",
+      "import": "import PageTransitionSwirl from '@/components/ui/PageTransitionSwirl';",
+      "path": "@/components/ui/PageTransitionSwirl",
+      "description": "Page load transition with animated SVG swirl path using primary CTA color",
+      "propsSchema": {}
+    },
+    {
+      "name": "HoverPattern",
+      "import": "import HoverPattern from '@/components/ui/HoverPattern';",
+      "path": "@/components/ui/HoverPattern",
+      "description": "Wrapper with interactive hover effect showing gradient and random characters following mouse",
+      "propsSchema": {
+        "children": "ReactNode",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "TiltedStackCards",
+      "import": "import TiltedStackCards from '@/components/ui/TiltedStackCards';",
+      "path": "@/components/ui/TiltedStackCards",
+      "description": "3D tilted stack of cards with icon, title, subtitle, and detail",
+      "propsSchema": {
+        "items": "[{ icon: string; title: string; subtitle: string; detail: string }, { icon: string; title: string; subtitle: string; detail: string }, { icon: string; title: string; subtitle: string; detail: string }]"
+      }
+    },
+    {
+      "name": "ChecklistTimeline",
+      "import": "import ChecklistTimeline from '@/components/ui/ChecklistTimeline';",
+      "path": "@/components/ui/ChecklistTimeline",
+      "description": "Animated checklist timeline with heading, items, and completion state",
+      "propsSchema": {
+        "heading": "string",
+        "subheading": "string",
+        "items": "[{ label: string; detail: string }, { label: string; detail: string }, { label: string; detail: string }]",
+        "completedLabel": "string"
+      }
+    },
+    {
+      "name": "OrbitingIcons",
+      "import": "import OrbitingIcons from '@/components/ui/OrbitingIcons';",
+      "path": "@/components/ui/OrbitingIcons",
+      "description": "Center icon with orbiting icons around it in 3D perspective",
+      "propsSchema": {
+        "centerIcon": "string",
+        "items": "string[]"
+      }
+    },
+    {
+      "name": "MediaStack",
+      "import": "import MediaStack from '@/components/ui/MediaStack';",
+      "path": "@/components/ui/MediaStack",
+      "description": "Stack of 3 media items with hover fan-out effect",
+      "propsSchema": {
+        "items": "[{ imageSrc?: string; videoSrc?: string }, { imageSrc?: string; videoSrc?: string }, { imageSrc?: string; videoSrc?: string }]"
+      }
+    },
+    {
+      "name": "IconTextMarquee",
+      "import": "import IconTextMarquee from '@/components/ui/IconTextMarquee';",
+      "path": "@/components/ui/IconTextMarquee",
+      "description": "Center icon with scrolling text marquee rows around it",
+      "propsSchema": {
+        "centerIcon": "string",
+        "texts": "string[]"
+      }
+    },
+    {
+      "name": "InfoCardMarquee",
+      "import": "import InfoCardMarquee from '@/components/ui/InfoCardMarquee';",
+      "path": "@/components/ui/InfoCardMarquee",
+      "description": "Vertical scrolling marquee of info cards with icon, label, and value",
+      "propsSchema": {
+        "items": "{ icon: string; label: string; value: string }[]"
+      }
+    },
+    {
+      "name": "ChatMarquee",
+      "import": "import ChatMarquee from '@/components/ui/ChatMarquee';",
+      "path": "@/components/ui/ChatMarquee",
+      "description": "Scrolling chat conversation with user and AI message bubbles",
+      "propsSchema": {
+        "aiIcon": "string",
+        "userIcon": "string",
+        "exchanges": "{ userMessage: string; aiResponse: string }[]",
+        "placeholder": "string"
+      }
+    },
+    {
+      "name": "AnimatedBarChart",
+      "import": "import AnimatedBarChart from '@/components/ui/AnimatedBarChart';",
+      "path": "@/components/ui/AnimatedBarChart",
+      "description": "Animated bar chart with cycling highlight and hover height change",
+      "propsSchema": {}
+    },
+    {
+      "name": "AutoFillText",
+      "import": "import AutoFillText from '@/components/ui/AutoFillText';",
+      "path": "@/components/ui/AutoFillText",
+      "description": "Text that automatically scales to fill the container width",
+      "propsSchema": {
+        "children": "string",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "TiltedCarousel",
+      "import": "import TiltedCarousel from '@/components/ui/TiltedCarousel';",
+      "path": "@/components/ui/TiltedCarousel",
+      "description": "Auto-playing carousel with tilted/rotated side cards and centered active card",
+      "propsSchema": {
+        "items": "({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never })[]",
+        "autoPlayInterval?": "number"
+      }
+    },
+    {
+      "name": "LightRaysCenterBackground",
+      "import": "import LightRaysCenterBackground from '@/components/ui/LightRaysCenterBackground';",
+      "path": "@/components/ui/LightRaysCenterBackground",
+      "description": "Animated decorative background with pulsing light rays from center top and grid overlay",
+      "propsSchema": {
+        "position": "'fixed' | 'absolute'"
+      }
+    },
+    {
+      "name": "LightRaysCornerBackground",
+      "import": "import LightRaysCornerBackground from '@/components/ui/LightRaysCornerBackground';",
+      "path": "@/components/ui/LightRaysCornerBackground",
+      "description": "Animated decorative background with pulsing light rays from top left corner and grid overlay",
+      "propsSchema": {
+        "position": "'fixed' | 'absolute'"
+      }
+    },
+    {
+      "name": "GradientBarsBackground",
+      "import": "import GradientBarsBackground from '@/components/ui/GradientBarsBackground';",
+      "path": "@/components/ui/GradientBarsBackground",
+      "description": "Decorative gradient bars on left and right sides with vertical fade",
+      "propsSchema": {
+        "position": "'fixed' | 'absolute'"
+      }
+    },
+    {
+      "name": "GridLinesBackground",
+      "import": "import GridLinesBackground from '@/components/ui/GridLinesBackground';",
+      "path": "@/components/ui/GridLinesBackground",
+      "description": "Decorative grid lines background with radial fade mask",
+      "propsSchema": {
+        "position": "'fixed' | 'absolute'"
+      }
+    },
+    {
+      "name": "NoiseBackground",
+      "import": "import NoiseBackground from '@/components/ui/NoiseBackground';",
+      "path": "@/components/ui/NoiseBackground",
+      "description": "Subtle noise texture overlay background",
+      "propsSchema": {
+        "position": "'fixed' | 'absolute'"
+      }
+    },
+    {
+      "name": "NoiseGradientBackground",
+      "import": "import NoiseGradientBackground from '@/components/ui/NoiseGradientBackground';",
+      "path": "@/components/ui/NoiseGradientBackground",
+      "description": "Diagonal gradient background with noise texture overlay",
+      "propsSchema": {
+        "position": "'fixed' | 'absolute'"
+      }
+    },
+    {
+      "name": "RadialGradientBackground",
+      "import": "import RadialGradientBackground from '@/components/ui/RadialGradientBackground';",
+      "path": "@/components/ui/RadialGradientBackground",
+      "description": "Radial gradient background from center to edges with vertical fade mask",
+      "propsSchema": {
+        "position": "'fixed' | 'absolute'"
+      }
+    },
+    {
+      "name": "FloatingGradientBackground",
+      "import": "import FloatingGradientBackground from '@/components/ui/FloatingGradientBackground';",
+      "path": "@/components/ui/FloatingGradientBackground",
+      "description": "Animated floating gradient circles background with blur effect",
+      "propsSchema": {
+        "position": "'fixed' | 'absolute'"
+      }
+    },
+    {
+      "name": "AuroraBackground",
+      "import": "import AuroraBackground from '@/components/ui/AuroraBackground';",
+      "path": "@/components/ui/AuroraBackground",
+      "description": "Animated aurora borealis effect background with gradient waves",
+      "propsSchema": {
+        "position": "'fixed' | 'absolute'"
+      }
+    },
+    {
+      "name": "ColumnWaveBackground",
+      "import": "import ColumnWaveBackground from '@/components/ui/ColumnWaveBackground';",
+      "path": "@/components/ui/ColumnWaveBackground",
+      "description": "Animated vertical columns with sequential wave pulse effect",
+      "propsSchema": {
+        "position": "'fixed' | 'absolute'"
+      }
+    },
+    {
+      "name": "CornerGlowBackground",
+      "import": "import CornerGlowBackground from '@/components/ui/CornerGlowBackground';",
+      "path": "@/components/ui/CornerGlowBackground",
+      "description": "Large radial gradient glow at opposite diagonal corners",
+      "propsSchema": {
+        "position": "'fixed' | 'absolute'"
+      }
+    },
+    {
+      "name": "HorizonGlowBackground",
+      "import": "import HorizonGlowBackground from '@/components/ui/HorizonGlowBackground';",
+      "path": "@/components/ui/HorizonGlowBackground",
+      "description": "Glowing horizon effect rising from the bottom",
+      "propsSchema": {
+        "position": "'fixed' | 'absolute'"
+      }
+    },
+    {
+      "name": "TextLink",
+      "import": "import TextLink from '@/components/ui/TextLink';",
+      "path": "@/components/ui/TextLink",
+      "description": "Text link with underline animation on hover",
+      "propsSchema": {
+        "text": "string",
+        "href?": "string",
+        "onClick?": "() => void",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "Accordion",
+      "import": "import Accordion from '@/components/ui/Accordion';",
+      "path": "@/components/ui/Accordion",
+      "description": "Expandable accordion with animated open/close transitions",
+      "propsSchema": {
+        "items": "{ title: string; content: string }[]",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "Tag",
+      "import": "import Tag from '@/components/ui/Tag';",
+      "path": "@/components/ui/Tag",
+      "description": "Small label tag with optional icon",
+      "propsSchema": {
+        "text": "string",
+        "icon?": "LucideIcon",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "TextBox",
+      "import": "import TextBox from '@/components/ui/TextBox';",
+      "path": "@/components/ui/TextBox",
+      "description": "Centered text block with optional tag, animated title, description, and action buttons",
+      "propsSchema": {
+        "tag?": "string",
+        "title": "string",
+        "description": "string",
+        "primaryButton?": "{ text: string; href: string }",
+        "secondaryButton?": "{ text: string; href: string }",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "ActiveBadge",
+      "import": "import ActiveBadge from '@/components/ui/ActiveBadge';",
+      "path": "@/components/ui/ActiveBadge",
+      "description": "Badge with pulsating indicator dot",
+      "propsSchema": {
+        "text": "string",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "ArrowButton",
+      "import": "import ArrowButton from '@/components/ui/ArrowButton';",
+      "path": "@/components/ui/ArrowButton",
+      "description": "Circular icon button with rotating arrow hover effect",
+      "propsSchema": {
+        "href?": "string",
+        "onClick?": "() => void",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "AvatarAuthor",
+      "import": "import AvatarAuthor from '@/components/ui/AvatarAuthor';",
+      "path": "@/components/ui/AvatarAuthor",
+      "description": "Avatar with name and role for testimonials and author attribution",
+      "propsSchema": {
+        "imageSrc?": "string",
+        "videoSrc?": "string",
+        "name": "string",
+        "role": "string",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "CheckList",
+      "import": "import CheckList from '@/components/ui/CheckList';",
+      "path": "@/components/ui/CheckList",
+      "description": "List of items with check icons for features and pricing",
+      "propsSchema": {
+        "items": "string[]",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "RatingStars",
+      "import": "import RatingStars from '@/components/ui/RatingStars';",
+      "path": "@/components/ui/RatingStars",
+      "description": "5-star rating display for testimonials and products",
+      "propsSchema": {
+        "rating": "number",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "Switch",
+      "import": "import Switch from '@/components/ui/Switch';",
+      "path": "@/components/ui/Switch",
+      "description": "Toggle switch for on/off states",
+      "propsSchema": {
+        "checked": "boolean",
+        "onChange": "(checked: boolean) => void",
+        "disabled?": "boolean",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "SelectorButton",
+      "import": "import SelectorButton from '@/components/ui/SelectorButton';",
+      "path": "@/components/ui/SelectorButton",
+      "description": "Segmented control with sliding indicator animation",
+      "propsSchema": {
+        "options": "{ value: string; label: string }[]",
+        "activeValue": "string",
+        "onValueChange": "(value: string) => void",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "Card",
+      "import": "import Card from '@/components/ui/Card';",
+      "path": "@/components/ui/Card",
+      "description": "Card container with standard padding",
+      "propsSchema": {
+        "children": "ReactNode",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "Separator",
+      "import": "import Separator from '@/components/ui/Separator';",
+      "path": "@/components/ui/Separator",
+      "description": "Horizontal divider line",
+      "propsSchema": {
+        "className?": "string"
+      }
+    },
+    {
+      "name": "Input",
+      "import": "import Input from '@/components/ui/Input';",
+      "path": "@/components/ui/Input",
+      "description": "Form text input with secondary button styling",
+      "propsSchema": {
+        "className?": "string",
+        "...props": "React.InputHTMLAttributes"
+      }
+    },
+    {
+      "name": "Label",
+      "import": "import Label from '@/components/ui/Label';",
+      "path": "@/components/ui/Label",
+      "description": "Form label for input fields",
+      "propsSchema": {
+        "className?": "string",
+        "...props": "React.LabelHTMLAttributes"
+      }
+    },
+    {
+      "name": "Textarea",
+      "import": "import Textarea from '@/components/ui/Textarea';",
+      "path": "@/components/ui/Textarea",
+      "description": "Multi-line text input with secondary button styling",
+      "propsSchema": {
+        "className?": "string",
+        "...props": "React.TextareaHTMLAttributes"
+      }
+    },
+    {
+      "name": "Tooltip",
+      "import": "import Tooltip from '@/components/ui/Tooltip';",
+      "path": "@/components/ui/Tooltip",
+      "description": "Hover tooltip with animated appearance",
+      "propsSchema": {
+        "content": "string",
+        "position?": "'top' | 'bottom' | 'left' | 'right'",
+        "children": "ReactNode",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "AvatarGroup",
+      "import": "import AvatarGroup from '@/components/ui/AvatarGroup';",
+      "path": "@/components/ui/AvatarGroup",
+      "description": "Overlapping avatar stack with overflow count",
+      "propsSchema": {
+        "avatarsSrc": "string[]",
+        "max?": "number",
+        "size?": "'sm' | 'md' | 'lg'",
+        "label?": "string",
+        "labelClassName?": "string",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "Spinner",
+      "import": "import Spinner from '@/components/ui/Spinner';",
+      "path": "@/components/ui/Spinner",
+      "description": "Loading spinner with CSS animation",
+      "propsSchema": {
+        "size?": "'sm' | 'md' | 'lg'",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "LoaderReveal",
+      "import": "import LoaderReveal from '@/components/ui/LoaderReveal';",
+      "path": "@/components/ui/LoaderReveal",
+      "description": "Full-screen loading animation with progress bar and reveal transition",
+      "propsSchema": {
+        "imageSrc": "string",
+        "title": "string",
+        "onComplete?": "() => void"
+      }
+    },
+    {
+      "name": "Dropdown",
+      "import": "import Dropdown from '@/components/ui/Dropdown';",
+      "path": "@/components/ui/Dropdown",
+      "description": "Generic dropdown container with custom children content",
+      "propsSchema": {
+        "children": "ReactNode",
+        "label": "string",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "DropdownMenu",
+      "import": "import DropdownMenu from '@/components/ui/DropdownMenu';",
+      "path": "@/components/ui/DropdownMenu",
+      "description": "Select dropdown menu with Framer Motion animations",
+      "propsSchema": {
+        "options": "{ label: string; value: string }[]",
+        "value?": "string",
+        "onChange?": "(value: string) => void",
+        "placeholder?": "string",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "Carousel",
+      "import": "import Carousel from '@/components/ui/Carousel';",
+      "path": "@/components/ui/Carousel",
+      "description": "Generic carousel with Embla and navigation controls",
+      "propsSchema": {
+        "children": "ReactNode",
+        "itemClassName?": "string",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "Calendar",
+      "import": "import Calendar from '@/components/ui/Calendar';",
+      "path": "@/components/ui/Calendar",
+      "description": "Date picker calendar using react-day-picker",
+      "propsSchema": {
+        "selected?": "Date",
+        "onSelect?": "(date: Date | undefined) => void",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "Sheet",
+      "import": "import Sheet from '@/components/ui/Sheet';",
+      "path": "@/components/ui/Sheet",
+      "description": "Slide-in panel from the right with overlay",
+      "propsSchema": {
+        "trigger": "ReactNode",
+        "title": "string",
+        "description?": "string",
+        "children": "ReactNode",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "Modal",
+      "import": "import Modal from '@/components/ui/Modal';",
+      "path": "@/components/ui/Modal",
+      "description": "Centered modal dialog with overlay",
+      "propsSchema": {
+        "trigger": "ReactNode",
+        "title": "string",
+        "description?": "string",
+        "children": "ReactNode",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "Checkbox",
+      "import": "import Checkbox from '@/components/ui/Checkbox';",
+      "path": "@/components/ui/Checkbox",
+      "description": "Animated checkbox with optional label and size variants",
+      "propsSchema": {
+        "checked": "boolean",
+        "onChange": "(checked: boolean) => void",
+        "label?": "string",
+        "size?": "'sm' | 'md' | 'lg'",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "BorderGlow",
+      "import": "import BorderGlow from '@/components/ui/BorderGlow';",
+      "path": "@/components/ui/BorderGlow",
+      "description": "Mouse-tracking border glow effect with smooth angle animation",
+      "propsSchema": {
+        "className?": "string"
+      }
+    },
+    {
+      "name": "SocialLinks",
+      "import": "import SocialLinks from '@/components/ui/SocialLinks';",
+      "path": "@/components/ui/SocialLinks",
+      "description": "Row of social media icon links for footer and team sections",
+      "propsSchema": {
+        "links": "{ icon: string; href: string }[]",
+        "size?": "'sm' | 'base' | 'lg'",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "IconBadge",
+      "import": "import IconBadge from '@/components/ui/IconBadge';",
+      "path": "@/components/ui/IconBadge",
+      "description": "Circular badge with icon using primary-button styling",
+      "propsSchema": {
+        "icon": "string | LucideIcon",
+        "size?": "'sm' | 'base' | 'lg'",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "PriceDisplay",
+      "import": "import PriceDisplay from '@/components/ui/PriceDisplay';",
+      "path": "@/components/ui/PriceDisplay",
+      "description": "Formatted price with optional strikethrough original price and period",
+      "propsSchema": {
+        "price": "number",
+        "originalPrice?": "number",
+        "currency?": "string",
+        "period?": "string",
+        "className?": "string"
+      }
+    },
+    {
+      "name": "CursorTrail",
+      "import": "import CursorTrail from '@/components/ui/CursorTrail';",
+      "path": "@/components/ui/CursorTrail",
+      "description": "Canvas-based cursor trail effect with smooth gradient ribbon animation",
+      "propsSchema": {
+        "color": "{ r: number; g: number; b: number }"
+      }
+    }
+  ],
+  "ecommerce": [
+    {
+      "name": "ProductDetailCard",
+      "import": "import ProductDetailCard from '@/components/ecommerce/ProductDetailCard';",
+      "path": "@/components/ecommerce/ProductDetailCard",
+      "description": "Product detail page component with image gallery, variants, quantity selection, and add to cart/buy buttons",
+      "propsSchema": {
+        "name": "string",
+        "price": "string",
+        "salePrice?": "string",
+        "images": "string[]",
+        "description?": "string",
+        "rating?": "number",
+        "ribbon?": "string",
+        "inventoryStatus?": "'in-stock' | 'out-of-stock'",
+        "inventoryQuantity?": "number",
+        "sku?": "string",
+        "variants?": "{ label: string; options: string[]; selected: string; onChange: (value: string) => void }[]",
+        "quantity?": "{ label: string; options: string[]; selected: string; onChange: (value: string) => void }",
+        "onAddToCart?": "() => void",
+        "onBuyNow?": "() => void"
+      }
+    },
+    {
+      "name": "ProductCatalog",
+      "import": "import ProductCatalog from '@/components/ecommerce/ProductCatalog';",
+      "path": "@/components/ecommerce/ProductCatalog",
+      "description": "Product catalog grid with search, filters, category display, and ratings with review count",
+      "propsSchema": {
+        "products?": "{ id: string; name: string; price: string; imageSrc: string; category?: string; rating?: number; reviewCount?: string; onClick?: () => void }[]",
+        "searchValue?": "string",
+        "onSearchChange?": "(value: string) => void",
+        "filters?": "{ label: string; options: string[]; selected: string; onChange: (value: string) => void }[]"
+      }
+    },
+    {
+      "name": "ProductCart",
+      "import": "import ProductCart from '@/components/ecommerce/ProductCart';",
+      "path": "@/components/ecommerce/ProductCart",
+      "description": "Slide-out shopping cart with quantity controls, item removal, and checkout button",
+      "propsSchema": {
+        "isOpen": "boolean",
+        "onClose": "() => void",
+        "items": "{ id: string; name: string; price: string; quantity: number; imageSrc: string }[]",
+        "total": "string",
+        "onQuantityChange?": "(id: string, quantity: number) => void",
+        "onRemove?": "(id: string) => void",
+        "onCheckout?": "() => void"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+# Secondary Button Styles
+
+4 secondary button style variants available.
+
+---
+
+## glass
+
+backdrop-filter: blur(8px);
+background: linear-gradient(to bottom right, color-mix(in srgb, var(--color-secondary-cta) 80%, transparent), var(--color-secondary-cta));
+box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+border: 1px solid var(--color-secondary-cta);
+
+---
+
+## solid
+
+background: var(--color-secondary-cta);
+
+---
+
+## layered
+
+background:
+  linear-gradient(color-mix(in srgb, var(--color-accent) 5%, transparent) 0%, transparent 59.26%),
+  linear-gradient(var(--color-secondary-cta), var(--color-secondary-cta)),
+  linear-gradient(var(--color-secondary-cta), var(--color-secondary-cta)),
+  linear-gradient(color-mix(in srgb, var(--color-accent) 5%, transparent) 0%, transparent 59.26%),
+  linear-gradient(color-mix(in srgb, var(--color-secondary-cta) 60%, transparent), color-mix(in srgb, var(--color-secondary-cta) 60%, transparent)),
+  var(--color-secondary-cta);
+box-shadow:
+  2.10837px 3.16256px 9.48767px color-mix(in srgb, var(--color-primary-cta) 10%, transparent);
+border: 1px solid var(--color-secondary-cta);
