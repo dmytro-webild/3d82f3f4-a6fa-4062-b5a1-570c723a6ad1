@@ -1,6 +1,5 @@
 import FooterSimpleMedia from '@/components/sections/footer/FooterSimpleMedia';
 import NavbarFloatingLogo from '@/components/ui/NavbarFloatingLogo';
-import PoolCage3DCanvas from '@/components/ui/PoolCage3DCanvas';
 import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
 import SiteBackgroundSlot from "@/components/ui/SiteBackgroundSlot";
 import { Outlet } from 'react-router-dom';
@@ -21,7 +20,6 @@ export default function Layout() {
 
   return (
     <StyleProvider buttonVariant="expand" siteBackground="floatingGradient" heroBackground="cornerGlow">
-      <PoolCage3DCanvas />
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
         <NavbarFloatingLogo
