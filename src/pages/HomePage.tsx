@@ -25,7 +25,7 @@ export default function HomePage() {
               text: "Explore Our Work",
               href: "#about",
             }}
-            videoSrc="https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4"
+            videoSrc="https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=1"
             textAnimation="slide-up"
           />
         </SectionErrorBoundary>
@@ -37,7 +37,7 @@ export default function HomePage() {
             tag="Florida Screen Expertise"
             title="Unmatched Craftsmanship in Every Pool Cage"
             description="Best Pool Cages is a proud DBA of Pool Perfect Screens LLC. We specialize in providing Florida homeowners with superior, hurricane-resistant pool enclosures that protect against debris, insects, and UV exposure while enhancing your poolside view."
-            videoSrc="https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4"
+            videoSrc="https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=1"
             textAnimation="fade-blur"
           />
         </SectionErrorBoundary>
@@ -53,7 +53,7 @@ export default function HomePage() {
               {
                 title: "Hurricane-Rated Framing",
                 description: "Structural aluminum beams engineered to meet strict Florida building and wind codes.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=2",
               },
               {
                 title: "Ultra-Clear View Mesh",
@@ -63,7 +63,7 @@ export default function HomePage() {
               {
                 title: "Custom Mansard & Gable Roofs",
                 description: "Bespoke architectural designs crafted specifically for your home's pool and patio layout.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=1",
               },
               {
                 title: "Expert Installation",
@@ -86,7 +86,7 @@ export default function HomePage() {
               {
                 title: "Custom Pool Enclosures",
                 description: "Full architectural aluminum cages built for Florida pools.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/hotel/hero.mp4?_wi=3",
               },
               {
                 title: "Mansard & Gable Roofs",
@@ -96,7 +96,7 @@ export default function HomePage() {
               {
                 title: "Lanai & Patio Extensions",
                 description: "Enclosed outdoor living spaces protected from bugs and debris.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/landscaping/about-video.mp4?_wi=2",
               },
               {
                 title: "High-Toughness Mesh",
@@ -111,7 +111,7 @@ export default function HomePage() {
               {
                 title: "Pool Access Gates",
                 description: "Child-safe, self-closing hinged screen doors with magnetic latches.",
-                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4",
+                videoSrc: "https://storage.googleapis.com/webild/default/templates/marbella/hero/hero.mp4?_wi=2",
               },
               {
                 title: "Complete Re-Screening",
