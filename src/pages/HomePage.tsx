@@ -27,22 +27,22 @@ export default function HomePage() {
             }}
             items={[
               {
-                imageSrc: "http://img.b2bpic.net/free-photo/pool-full-warm-water-garden_181624-10392.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/pool-full-warm-water-garden_181624-10392.jpg?_wi=1",
               },
               {
-                imageSrc: "http://img.b2bpic.net/free-photo/outdoor-swimming-pool-hotel-resort-summer-vacation_74190-3886.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/outdoor-swimming-pool-hotel-resort-summer-vacation_74190-3886.jpg?_wi=1",
               },
               {
-                imageSrc: "http://img.b2bpic.net/free-photo/beautiful-luxury-swimming-pool-with-palm-tree_1339-4855.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/beautiful-luxury-swimming-pool-with-palm-tree_1339-4855.jpg?_wi=2",
               },
               {
-                imageSrc: "http://img.b2bpic.net/free-photo/swimming-pool_1203-7236.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/swimming-pool_1203-7236.jpg?_wi=1",
               },
               {
-                imageSrc: "http://img.b2bpic.net/free-photo/outdoor-swimming-pool_1203-3104.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/outdoor-swimming-pool_1203-3104.jpg?_wi=1",
               },
               {
-                imageSrc: "http://img.b2bpic.net/free-photo/hotel-pool-resort_74190-1651.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/hotel-pool-resort_74190-1651.jpg?_wi=1",
               },
             ]}
             textAnimation="slide-up"
@@ -56,7 +56,7 @@ export default function HomePage() {
             tag="Florida Screen Expertise"
             title="Unmatched Craftsmanship in Every Pool Cage"
             description="Best Pool Cages is a proud DBA of Pool Perfect Screens LLC. We specialize in providing Florida homeowners with superior, hurricane-resistant pool enclosures that protect against debris, insects, and UV exposure while enhancing your poolside view."
-            imageSrc="http://img.b2bpic.net/free-photo/swimming-pool_1203-7236.jpg"
+            imageSrc="http://img.b2bpic.net/free-photo/swimming-pool_1203-7236.jpg?_wi=2"
             textAnimation="fade-blur"
           />
         </SectionErrorBoundary>
@@ -72,22 +72,22 @@ export default function HomePage() {
               {
                 title: "Hurricane-Rated Framing",
                 description: "Structural aluminum beams engineered to meet strict Florida building and wind codes.",
-                imageSrc: "http://img.b2bpic.net/free-photo/outdoor-swimming-pool_1203-3104.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/outdoor-swimming-pool_1203-3104.jpg?_wi=2",
               },
               {
                 title: "Ultra-Clear View Mesh",
                 description: "High-visibility mesh technology that keeps pests out without obstructing your outdoor view.",
-                imageSrc: "http://img.b2bpic.net/free-photo/beautiful-luxury-swimming-pool-with-palm-tree_1339-4855.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/beautiful-luxury-swimming-pool-with-palm-tree_1339-4855.jpg?_wi=3",
               },
               {
                 title: "Custom Mansard & Gable Roofs",
                 description: "Bespoke architectural designs crafted specifically for your home's pool and patio layout.",
-                imageSrc: "http://img.b2bpic.net/free-photo/hotel-pool-resort_74190-1651.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/hotel-pool-resort_74190-1651.jpg?_wi=2",
               },
               {
                 title: "Expert Installation",
                 description: "Precision assembly and installation by certified pool cage craftsmen.",
-                imageSrc: "http://img.b2bpic.net/free-photo/pool-full-warm-water-garden_181624-10392.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/pool-full-warm-water-garden_181624-10392.jpg?_wi=2",
               },
             ]}
             textAnimation="slide-up"
@@ -115,27 +115,27 @@ export default function HomePage() {
               {
                 title: "Lanai & Patio Extensions",
                 description: "Enclosed outdoor living spaces protected from bugs and debris.",
-                imageSrc: "http://img.b2bpic.net/free-photo/outdoor-swimming-pool_1203-3104.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/outdoor-swimming-pool_1203-3104.jpg?_wi=3",
               },
               {
                 title: "High-Toughness Mesh",
                 description: "Tear-resistant screen mesh engineered for tropical sunshine and storms.",
-                imageSrc: "http://img.b2bpic.net/free-photo/swimming-pool_1203-7236.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/swimming-pool_1203-7236.jpg?_wi=3",
               },
               {
                 title: "Coastal Stainless Fasteners",
                 description: "Corrosion-proof hardware to prevent rust stains on your pool deck.",
-                imageSrc: "http://img.b2bpic.net/free-photo/hotel-pool-resort_74190-1651.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/hotel-pool-resort_74190-1651.jpg?_wi=3",
               },
               {
                 title: "Pool Access Gates",
                 description: "Child-safe, self-closing hinged screen doors with magnetic latches.",
-                imageSrc: "http://img.b2bpic.net/free-photo/outdoor-swimming-pool-hotel-resort-summer-vacation_74190-3886.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/outdoor-swimming-pool-hotel-resort-summer-vacation_74190-3886.jpg?_wi=2",
               },
               {
                 title: "Complete Re-Screening",
                 description: "Full replacement of faded or damaged screens with UV-protected mesh.",
-                imageSrc: "http://img.b2bpic.net/free-photo/pool-full-warm-water-garden_181624-10392.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/pool-full-warm-water-garden_181624-10392.jpg?_wi=3",
               },
             ]}
             textAnimation="fade"
@@ -183,31 +183,31 @@ export default function HomePage() {
                 name: "Robert & Karen S.",
                 role: "Naples Homeowner",
                 quote: "Best Pool Cages built an incredible mansard enclosure over our pool. Even after heavy storms, the screen structure is rock solid.",
-                imageSrc: "http://img.b2bpic.net/free-photo/pool-full-warm-water-garden_181624-10392.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/pool-full-warm-water-garden_181624-10392.jpg?_wi=4",
               },
               {
                 name: "David M.",
                 role: "Sarasota Homeowner",
                 quote: "The clarity of the view mesh is unbelievable. We enjoy our pool area bug-free every evening. Truly first-rate work by Pool Perfect Screens.",
-                imageSrc: "http://img.b2bpic.net/free-photo/outdoor-swimming-pool_1203-3104.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/outdoor-swimming-pool_1203-3104.jpg?_wi=4",
               },
               {
                 name: "Elena G.",
                 role: "Fort Myers Homeowner",
                 quote: "Outstanding craftsmanship from start to finish. The aluminum frame matches our home's architecture seamlessly.",
-                imageSrc: "http://img.b2bpic.net/free-photo/swimming-pool_1203-7236.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/swimming-pool_1203-7236.jpg?_wi=4",
               },
               {
                 name: "Marcus T.",
                 role: "Tampa Property Owner",
                 quote: "Prompt service, clean job site, and top-notch materials. Hands down the best pool enclosure company in Florida.",
-                imageSrc: "http://img.b2bpic.net/free-photo/beautiful-luxury-swimming-pool-with-palm-tree_1339-4855.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/beautiful-luxury-swimming-pool-with-palm-tree_1339-4855.jpg?_wi=4",
               },
               {
                 name: "Sarah L.",
                 role: "Orlando Homeowner",
                 quote: "Replaced our damaged screen cage after last season. The quality of the stainless fasteners and mesh is night and day.",
-                imageSrc: "http://img.b2bpic.net/free-photo/hotel-pool-resort_74190-1651.jpg",
+                imageSrc: "http://img.b2bpic.net/free-photo/hotel-pool-resort_74190-1651.jpg?_wi=4",
               },
             ]}
             textAnimation="fade-blur"
